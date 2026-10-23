@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootsrapV5.3.2.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/bootstrap.bundle.min (1).js"></script>
+  <script src="js/jquery-3.6.0 (1).js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <div id="loginScreen" class="login-screen">
+
+    <div class="login-box">
+
+        <h1 class="text-title text-center mb-4">
+            Bienvenido
+        </h1>
+        <p>Manejo de las emociones</p>
+        <img src="img/imagen.4.png" width="200px" heigth="200px">
+
+        <form id="formLogin">
+
+            <input
+              type="text"
+              id="inputNombre"
+              class="form-control mb-3"
+              placeholder="Ingrese su nombre">
+
+            <button type="submit" class="btn-temas w-100" onclick="iniciarSesion()">
+                Ingresar
+            </button>
+
+        </form>
+        <div id="alertContainer"></div>
+
+    </div>
+
+</div>
+
+<div id="appContent" style="display:none;">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="javascript:cargarpagina('home.html')"><img src="img/imagen.4.png"
+            class="img-logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+     
+
+        <div class="collapse navbar-collapse" id="menuNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="javascript:cargarpagina('home.html')">Inicio</a>
+            </li>
+
+
+            <!-- Dropdown Cotexto -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+             Contexto
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="javascript:cargarpagina('problema.html')">Plantemiento de problema</a></li>
+              <li><a class="dropdown-item" href="javascript:cargarpagina('objetivos.html')">Objetivos</a></li>
+
+
+              <li><a class="dropdown-item" href="javascript:cargarpagina('marco-referencia.html')">Marco de Referencia</a></li>
+             
+            </ul>
+          </li>
+
+          <!-- Dropdown acerca del proyecto -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Ruta del proyecto
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="javascript:cargarpagina('introduccion.html')">Introducción</a></li>
+              <li><a class="dropdown-item" href="javascript:cargarpagina('justificacion.html')">Justificación</a></li>
+              <li><a class="dropdown-item" href="javascript:cargarpagina('evidencias.html')">Evidencias</a></li>
+              <li><a class="dropdown-item" href="javascript:cargarpagina('conclusiones.html')">Conclusiones</a></li>
+              <li><a class="dropdown-item" href="javascript:cargarpagina('visor.html')">Visor</a></li>
+            </ul>
+          </li>
+           
+            
+       
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:cargarpagina('juego.html')">Juegos</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link" href="javascript:cargarpagina('actividades.html')">Actividades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:cargarpagina('creditos.html')">Crèditos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+   
+  <section id="contenido">
+
+
+  </section>
+  <footer class="footer">
+    <p class="mb-0">© <span id="year"></span>Colegio Gimnasio Santander de Tunja - Todos los derechos reservados
+      Valentina Echeverri - Jhonatan Rodriguez - Zara Gamba</p>
+      <a class="navbar-brand" href="javascript:cargarpagina('home.html')"><img src="img/escudo.png"
+            class="escudo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  </footer>
+
+</body>
+
+</html>
+
